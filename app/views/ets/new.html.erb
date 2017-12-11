@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-8">
+            <%= simple_form_for @et do |e| %>
+                  <%= e.error_notification %>
+                
+                    <%= e.input :name, placeholder: 'Nom ou marque du pressing' %>
+                    <%= e.input :adresse, placeholder: 'ex : 8 place des Cordeliers' %>
+                    <%= e.input :zip, placeholder: '69002' %>                    
+                    <%= e.input :city, placeholder: 'Lyon' %>
+                    <%= e.input :chemise, placeholder: 'ex :4,5' %> €
+                    <%= e.input :cinqchemise, placeholder: 'ex : 20' %> €                   
+                    <%= e.input :email, placeholder: 'ex : 20' %>
+                    <%= e.input :password, placeholder: 'Password' %>
+                
+                
+                
+                  <%= e.button :submit %>
+                <% end %>
+            
+            
+            
+            
+        </div>
+    </div>
+</div>
